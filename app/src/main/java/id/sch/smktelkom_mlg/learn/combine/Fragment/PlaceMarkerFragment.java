@@ -26,7 +26,7 @@ import id.sch.smktelkom_mlg.learn.combine.R;
 public class PlaceMarkerFragment extends Fragment implements OnMapReadyCallback {
 
     static final CameraPosition JTG = CameraPosition.builder()
-            .target(new LatLng(48.8584, 2.2945))
+            .target(new LatLng(-7.696598, 112.643703))
             .zoom(15)
             .bearing(0)
             .tilt(45)
@@ -56,7 +56,7 @@ public class PlaceMarkerFragment extends Fragment implements OnMapReadyCallback 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        int imageresources = getResources().getIdentifier("@drawable/ic_place", "drawable", getActivity().getPackageName());
+        int imageresources = getResources().getIdentifier("@drawable/location_on", "drawable", getActivity().getPackageName());
 
         house = new MarkerOptions()
                 .position(new LatLng(-7.689707, 112.617807))

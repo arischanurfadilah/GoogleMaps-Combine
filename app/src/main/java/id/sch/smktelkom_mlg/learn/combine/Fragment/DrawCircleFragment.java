@@ -26,14 +26,14 @@ import id.sch.smktelkom_mlg.learn.combine.R;
 public class DrawCircleFragment extends Fragment implements OnMapReadyCallback {
 
     static final CameraPosition SGH = CameraPosition.builder()
-            .target(new LatLng(48.8584, 2.2945))
+            .target(new LatLng(-7.642635, 112.703294))
             .zoom(10)
             .bearing(0)
             .tilt(45)
             .build();
     GoogleMap m_map;
     boolean mapReady = false;
-    LatLng sugihan = new LatLng(2.2960, 2.2950);
+    LatLng sugihan = new LatLng(-7.696598, 112.643703);
 
 
     public DrawCircleFragment() {
@@ -62,8 +62,8 @@ public class DrawCircleFragment extends Fragment implements OnMapReadyCallback {
         map.addCircle(new CircleOptions()
                 .center(sugihan)
                 .radius(1000)
-                .strokeColor(Color.GREEN)
-                .fillColor(Color.argb(64, 0, 255, 0)));
+                .strokeColor(Color.RED)
+                .fillColor(Color.argb(64, 255, 0, 0)));
 
     }
 }
